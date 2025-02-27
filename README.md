@@ -1,8 +1,10 @@
 # Desafio Target Sistemas
 
-## O código das soluções encontram-se em arquivos separados em '/src/function'
+### O código das soluções encontram-se em arquivos separados em '/src/functions'
 
-### Instruções para rodar o projeto localmente:
+### As funções estão sendo chamadas no componente principal '/src/App.tsx' tal qual a renderização dos elementos com seus valores.
+
+## Instruções para rodar o projeto localmente:
 
 Clone o meu repositório:
 

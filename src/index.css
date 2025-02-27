@@ -5,6 +5,28 @@
   font-family: sans-serif;
 }
 
+body {
+  background-color: #060606;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #0f0f0f;
+  color: #fafafa
+}
+
 .challenge-box {
-  margin: 50px 0;
+  padding: 30px 10px;
+  width: 100%;
+  /* background-color: red; */
+  border-bottom: 1.5px solid #fafafa;
+}
+
+.challenge-box:last-of-type {
+  border-bottom: 0;
+}
+
+.challenge-box p {
+  margin-top: 5px;
 }

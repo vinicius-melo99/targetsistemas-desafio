@@ -57,18 +57,18 @@ function App() {
   };
 
   return (
-    <>
+    <div className="container">
       <div className="challenge-box">
-        <h1>
+        <h2>
           Desafio 1: Ao final do processamento qual vai ser o valor de SOMA?
-        </h1>
-        <h2>Soma é: {challengeOne}</h2>
+        </h2>
+        <p>Soma é: {challengeOne}</p>
       </div>
 
       <div className="challenge-box">
-        <h1>
+        <h2>
           Desafio 2: informe um número para calcular a sequencia de fibonacci:
-        </h1>
+        </h2>
         <input
           id="fibo"
           type="number"
@@ -78,11 +78,11 @@ function App() {
         <button disabled={!number} onClick={handleButtonCalcFibo}>
           Calcular
         </button>
-        <h2>
+        <p>
           Fibonacci é: {'('}
           {fiboResult?.map((num, index) => <span key={index}>{num}, </span>)}
           {')'}
-        </h2>
+        </p>
         <p>
           {fiboResult?.find((num) => num === number)
             ? `${number} está na sequencia`
@@ -91,8 +91,8 @@ function App() {
       </div>
 
       <div className="challenge-box">
-        <h1>Desafio 3: Faturamento diário de uma distribuidora</h1>
-        <h3>
+        <h2>Desafio 3: Faturamento diário de uma distribuidora</h2>
+        <p>
           O menor valor de faturamento ocorrido em um dia do mês:{' '}
           {`R$ ${dadosFaturamento?.menorFaturamento.toFixed(2)}`}
           <div />O maior valor de faturamento ocorrido em um dia do mês:{' '}
@@ -100,11 +100,11 @@ function App() {
           <div />
           Número de dias no mês em que ovalor de faturamento diário foi superior
           à média mensal.: {dadosFaturamento?.maiorQueAMedia}
-        </h3>
+        </p>
       </div>
 
       <div className="challenge-box">
-        <h1>Desafio 4: Desempenho por estado:</h1>
+        <h2>Desafio 4: Desempenho por estado:</h2>
         {desempenhoEstado?.map((state, index) => (
           <div key={index}>
             <h4>Estado: {state.stateName}</h4>
@@ -115,12 +115,12 @@ function App() {
       </div>
 
       <div className="challenge-box">
-        <h1>Desafio 5: Inverte a palavra:</h1>
+        <h2>Desafio 5: Inverte a palavra:</h2>
         <input id="word" type="text" value={word} onChange={handleInputWord} />
         <button onClick={handleButtonReverseWord}>Inverter Palavra</button>
         <h3>{reversedWord && `A palavra invertida é: ${reversedWord}`}</h3>
       </div>
-    </>
+    </div>
   );
 }
 
