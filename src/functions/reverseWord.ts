@@ -1,3 +1,5 @@
+// desafio 5
+
 export default (word: string) => {
   const wordArray = [...word.split('')];
   console.log(wordArray);

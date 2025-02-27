@@ -27,11 +27,14 @@ function App() {
   >();
 
   useEffect(() => {
+    //chama a função que resolve o desafio 1
     const result = sum();
     setChallangeOne(result);
 
+    // chama a função que resolve o desafio 3
     setDadosFaturamento(calculaFaturamento());
 
+    // chama a função que resolve o desafio 4
     setdesempenhoEstado(desempenhoPorEstado());
   }, []);
 
@@ -40,6 +43,7 @@ function App() {
   };
 
   const handleButtonCalcFibo = () => {
+    // chama a função que resolve o desafio 2 e altera o estado fiboResult
     setFiboResult(fibo(number as number));
   };
 
@@ -48,6 +52,7 @@ function App() {
   };
 
   const handleButtonReverseWord = () => {
+    // chama a função que resolve o desafio 5 e altera o estado reverseWord
     setReversedWord(reverseWord(word));
   };
 
